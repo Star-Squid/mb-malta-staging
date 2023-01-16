@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #13240b;
+  background: linear-gradient(
+      180deg,
+      #0f1307 1%,
+      #01010100 10% 95%,
+      #0f1307e6 100%
+    ),
+    radial-gradient(circle, #1e3d0ee6 20%, #0f1307e6 75%),
+    radial-gradient(circle, #1e3d0ee0 25%, #13240be0 55%),
+    url("../assets/grain.png");
+
+  color: #fff;
+  font-family: "Mr Bedfort", cursive;
+  font-size: clamp(3rem, 11vmin, 5rem);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover,
+a:active {
+  color: #b9bf4d;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  color: #fff;
+  font-family: "Mr Bedfort", cursive;
+  font-size: 11vmin;
+  width: 80vmin;
+  height: 45vmin;
+  padding: 3vmin 5vmin 5vmin 5vmin;
+}
+
+.image-group {
+  width: 45vmax;
+  height: 45vmax;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.image-group img,
+.image-group svg {
+  width: 45vmax;
+  height: 45vmax;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  transform: scale(1.2);
+}
+
+.image-group svg {
+  filter: opacity(15%);
+}
+
+#barbara:hover,
+#mat:hover,
+#cat:hover {
+  filter: opacity(0);
+  cursor: pointer;
+}

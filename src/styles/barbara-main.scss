@@ -1,0 +1,87 @@
+@import "./barbara-vars";
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "PT Sans", sans-serif;
+    color: var(--white);
+    font-size: var(--regular);
+    text-align: justify;
+    text-justify: inter-word;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark);
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    overflow-x: hidden;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 11px;
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+  
+  a {
+    color: var(--blue);
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: var(--almostwhite);
+  }
+  
+  h1 {
+    font-family: "Unica One", cursive;
+    color: var(--white);
+    font-size: calc(var(--regular) + 8vmin);
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    font-weight: 800;
+    text-align: left;
+  }
+  
+  h2 {
+    font-family: "Unica One", cursive;
+    font-size: calc(var(--regular) + 3vmin);
+    margin: 0px;
+    padding: 0px;
+    color: var(--almostwhite);
+  }
+  
+  .logo {
+    text-shadow: 1px 0px 1px var(--medium), 0px 1px 1px var(--dark),
+      2px 1px 1px var(--medium), 1px 2px 1px var(--dark),
+      3px 2px 1px var(--medium), 2px 3px 1px var(--dark),
+      4px 3px 1px var(--medium), 3px 4px 1px var(--dark);
+  }
+  
+  h3 {
+    font-family: "Unica One", cursive;
+    color: var(--almostwhite);
+    font-size: calc(var(--regular) + 1vmin);
+    padding: 0px;
+    font-weight: 800;
+    margin: 0px;
+  }

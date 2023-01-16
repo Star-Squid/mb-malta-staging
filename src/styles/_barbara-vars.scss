@@ -1,0 +1,27 @@
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Unica+One&display=swap');
+
+
+    $medium-fontsize: clamp(1rem, 2vmin, 2rem);
+    $regular-fontfamily: "PT Sans", sans-serif;
+    $fancy-fontfamily: "Unica One", cursive;
+
+    $background-img: url("../assets/keyboard.webp");
+  
+    $transparent: rgba(1, 1, 1, 0);
+    $white: #ffffff;
+    $almostwhite: #cccccc;
+    $electricblue: #27c3f1;
+    $blue: #9dc3ce;
+    $pink: #c12240;
+    $steel: #1d3f55;
+  
+    $black: #1c1618;
+    $dark: #212121;
+    $halfdark: #212121e1;
+    $medium: #3e3e3e;
+    $halfmedium: #3e3e3ecc;
+  
+    $scrollbar-bg: #212121;
+    $scrollthumb-bg: #cccccc;
+  
+  

@@ -1,39 +1,41 @@
-import * as React from "react"
-import "../styles/entry-main.scss"
-// import grain from "../assets/grain.png"
-import Hero from "../assets/mbandc.png"
+import * as React from "react";
+import "../styles/entry-main.scss";
+import Hero from "../assets/mbandc.png";
 
 const IndexPage = () => {
   return (
-    <main styleName="container">
+    <main styleName="container w-full h-full">
+      <div styleName="title">
+        <div styleName="words">
+          <a href="https://star-squid.github.io/">&nbsp;Barbara</a>,&nbsp;
+          <a href="https://landsil.github.io/mateusz/">Mat</a>,
+          <br />
+          &nbsp;...and&nbsp;
+          <a href="https://www.instagram.com/jacketpotatocat/">Cat</a>
+        </div>
+      </div>
 
-
-    <div styleName="title">
-    <div styleName="words">
-
-      <a href="https://star-squid.github.io/">
-      &nbsp;Barbara</a>,&nbsp;<a href="https://landsil.github.io/mateusz/">Mat</a>,
-      <br/>
-      &nbsp;...and&nbsp;<a href="https://www.instagram.com/jacketpotatocat/">Cat</a>
-
-    </div>
-    </div>
-
-    {/* <img src="../assets/mbandc.png" alt="yay"></img>
+      {/* <img src="../assets/mbandc.png" alt="yay"></img>
     <img src={grain} alt="nope"></img> */}
 
-    <div id="image-group" className="image-group">
+      <div id="image-group" className="image-group">
+        <img src={Hero} alt="Portrait of Barbara, Mat, and Cat" />
 
-    <img src={Hero} alt="Portrait of Barbara, Mat, and Cat"/>
-
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6487.000000 6199.000000"
-     preserveAspectRatio="xMidYMid meet">
-
-    <g transform="translate(0.000000,6199.000000) scale(0.100000,-0.100000)"
-    fill="rgb(81, 87, 47)" stroke="none">
-
-    <a href="https://landsil.github.io/mateusz/">
-    <path  id="mat" d="M39650 59458 c-19 -5 -112 -13 -206 -17 -94 -5 -180 -14 -192 -20
+        <svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 6487.000000 6199.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g
+            transform="translate(0.000000,6199.000000) scale(0.100000,-0.100000)"
+            fill="rgb(81, 87, 47)"
+            stroke="none"
+          >
+            <a href="https://landsil.github.io/mateusz/">
+              <path
+                id="mat"
+                d="M39650 59458 c-19 -5 -112 -13 -206 -17 -94 -5 -180 -14 -192 -20
     -26 -14 -159 2 -213 25 -27 12 -57 14 -125 10 -110 -7 -110 -7 -213 0 -64 4
     -93 2 -120 -10 -20 -9 -91 -20 -158 -26 -67 -5 -133 -14 -148 -20 -14 -5 -68
     -10 -118 -10 -61 -1 -100 -6 -117 -15 -14 -8 -52 -14 -85 -15 -41 0 -70 -6
@@ -306,13 +308,16 @@ const IndexPage = () => {
     209 -36 29 -95 55 -128 56 -31 0 -95 39 -102 61 -17 53 -124 139 -173 139 -10
     0 -33 15 -51 34 -18 19 -51 42 -72 52 -22 9 -59 36 -83 58 -133 124 -155 132
     -406 141 l-195 7 -38 -26 c-33 -22 -53 -27 -170 -36 -72 -5 -162 -17 -198 -27
-    l-67 -16 -32 37 c-49 56 -77 66 -172 65 -46 -1 -99 -5 -118 -11z">
-      <title>Mat's Portfolio</title>
-    </path>
-    </a>
+    l-67 -16 -32 37 c-49 56 -77 66 -172 65 -46 -1 -99 -5 -118 -11z"
+              >
+                <title>Mat's Portfolio</title>
+              </path>
+            </a>
 
-    <a href="https://instagram.com/jacketpotatocat">
-    <path id="cat" d="M53230 45410 c-8 -6 -32 -15 -52 -20 -43 -12 -184 -147 -194 -186 -9
+            <a href="https://instagram.com/jacketpotatocat">
+              <path
+                id="cat"
+                d="M53230 45410 c-8 -6 -32 -15 -52 -20 -43 -12 -184 -147 -194 -186 -9
     -34 -58 -123 -86 -155 -13 -14 -48 -47 -79 -72 -52 -43 -60 -47 -111 -47 -42
     0 -62 -5 -83 -22 -16 -12 -42 -29 -59 -38 -29 -15 -95 -110 -96 -139 0 -8 -9
     -24 -19 -35 -11 -12 -36 -52 -56 -91 -21 -38 -45 -78 -54 -89 -9 -10 -25 -35
@@ -562,13 +567,15 @@ const IndexPage = () => {
     0 66 c0 66 0 67 -54 128 -68 79 -100 100 -152 100 -51 0 -62 12 -80 92 -19 79
     -77 177 -149 248 -30 30 -55 61 -55 70 0 33 -41 82 -88 102 -36 17 -69 22
     -146 22 -95 2 -99 3 -118 29 -24 33 -67 57 -104 57 -14 0 -48 11 -76 25 -51
-    26 -121 33 -148 15z">
-      </path>
-      <title>Jack the Cat's Instagram</title>
-    </a>
+    26 -121 33 -148 15z"
+              ></path>
+              <title>Jack the Cat's Instagram</title>
+            </a>
 
-    <a href="https://landsil.github.io/barbara/">
-    <path  id="barbara" d="M21505 43995 c-38 -8 -108 -22 -155 -31 -95 -18 -208 -52 -216 -65
+            <a href="https://landsil.github.io/barbara/">
+              <path
+                id="barbara"
+                d="M21505 43995 c-38 -8 -108 -22 -155 -31 -95 -18 -208 -52 -216 -65
     -3 -5 -19 -9 -36 -9 -17 0 -52 -13 -77 -28 -25 -16 -64 -32 -85 -36 -22 -4
     -62 -20 -90 -35 -83 -45 -104 -56 -251 -127 -77 -36 -151 -77 -165 -89 -14
     -12 -45 -30 -70 -39 -25 -10 -52 -23 -60 -30 -46 -39 -153 -106 -169 -106 -18
@@ -890,22 +897,20 @@ const IndexPage = () => {
     -79 10 -112 45 -33 35 -40 38 -110 45 -91 8 -146 24 -225 63 -33 16 -77 32
     -98 35 -20 3 -49 15 -64 26 -27 22 -91 28 -121 12 -25 -13 -201 7 -237 27 -24
     13 -56 16 -155 15 -69 0 -136 -1 -150 -2 -14 -1 -47 1 -75 4 -27 2 -81 -2
-    -120 -10z">
-      </path>
-      <title>Barbara's Portfolio</title>
-    </a>
-    </g>
-    </svg>
+    -120 -10z"
+              ></path>
+              <title>Barbara's Portfolio</title>
+            </a>
+          </g>
+        </svg>
+      </div>
+    </main>
+  );
+};
 
-  </div>
-  </main>
-  )
-}
+export default IndexPage;
 
-export default IndexPage
-
-export const Head = () => <title>Barbara, Mat, and Cat</title>
-
+export const Head = () => <title>Barbara, Mat, and Cat</title>;
 
 // import * as React from "react"
 

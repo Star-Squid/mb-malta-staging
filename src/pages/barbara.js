@@ -1,98 +1,60 @@
 import * as React from "react"
 import "../styles/barbara-main.scss"
-// import grain from "../assets/grain.png"
-// import Hero from "../assets/keyboard.webp"
-import ProjectCard from "../components/ProjectCard"
+import ProjectCard from "../barbara-components/ProjectCard"
+import Navbar from "../barbara-components/Navbar"
+import Sidebar from "../barbara-components/Sidebar"
+import Section from "../barbara-layout/Section"
 
 export default function BarbaraPage() {
   return (
-    <div class="container" role="presentation">
-      <nav class="links">
-        <ul>
-          <li class="skip-link">
-            <a href="#about"> skip to main content</a>
-          </li>
-          <li>
-            <a href="#header">
-              <h2 class="logo">BM</h2>
-            </a>
-          </li>
-          <li>
-            <a href="#about"> about </a>
-          </li>
-          <li>
-            <a href="#projects"> projects </a>
-          </li>
-          <li>
-            <a href="#contact"> contact </a>
-          </li>
-        </ul>
-      </nav>
+    <div className="container" role="presentation">
+      <Navbar></Navbar>
 
-      <nav class="icons">
-        <ul>
-          <li>
-            <a href="mailto:barbara@mb-malta.co.uk" aria-label="Email"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/barbara-malta" aria-label="LinkedIn"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-          
-          <li>
-            <a href="https://github.com/Star-Squid" aria-label="Github"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+      <Sidebar></Sidebar>
 
-      <section id="header">
-        <div class="hello" role="presentation">
-          <div class="greeting reveal">
+      <Section id="header">
+        <div className="hello" role="presentation">
+          <div className="greeting reveal">
             <h1>
               Hello,
               <br />
               I am Barbara Malta
             </h1>
           </div>
-          <div class="description reveal">
+          <div className="description reveal">
             frontend developer
           </div>
         </div>
-      </section>
+      </Section>
 
       <section id="about">
-        <div class="about-project" role="presentation">
+        <div className="about-project" role="presentation">
           <img
-            class="face reveal"
+            className="face reveal"
             src="img/faces-with-eyes.webp"
             alt="Barbara with Potato the cat"
           />
 
           <div role="presentation">
-            <h2 class="right-slide">About</h2>
+            <h2 className="right-slide">About</h2>
 
-            <p class="right-slide">
+            <p className="right-slide">
               When I coded my first “Hello World” using Notepad on Windows 98,
               it felt like the most significant and eye-opening activity in the
               world. However, aside from a number of gif-enriched personal pages and
               blogs, that period did not have any substantial outcomes.
             </p>
 
-            <p class="right-slide">
+            <p className="right-slide">
               I renewed my study of code in 2021, and based on previous
               experiences, made web development my focus. I am now a great fan
               of flexbox-based layouts and JavaScript. I still have a certain
               affinity for retro-style design, but I refrain from using neon
               text effects.<br />
-              <span class="flicker">Most of the time.</span>
+              <span className="flicker">Most of the time.</span>
             </p>
 
-            <p class="right-slide">
+            <p className="right-slide">
               I am making efforts to focus more on the backend side of coding,
               because it seems more "serious", but whenever I see a
               well-designed website, I will spend hours checking what makes it
@@ -106,19 +68,19 @@ export default function BarbaraPage() {
 
       <section id="projects">
         <hr />
-        <h2 class="reveal">Favourite projects</h2>
-        <p class="reveal small-description">
+        <h2 className="reveal">Favourite projects</h2>
+        <p className="reveal small-description">
           Some special projects deserved a whole page to themselves.
         </p>
-        <div class="cards" role="presentation">
-          <div class="card reveal" role="presentation">
+        <div className="cards" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="projects/blog.html">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb blog-1"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb blog-1"></div>
               </div>
             </a>
             <h3>Star Squid Blog</h3>
-            <p class="languages">
+            <p className="languages">
               react &middot; scss &middot; graphQL &middot; contentful api
             </p>
             <p>
@@ -126,64 +88,64 @@ export default function BarbaraPage() {
               modern web solutions.
             </p>
             <p>
-              <a href="projects/blog.html" class="readmore">READ MORE</a>
-              <i class="fa-solid fa-angles-right"></i>
+              <a href="projects/blog.html" className="readmore">READ MORE</a>
+              <i className="fa-solid fa-angles-right"></i>
             </p>
           </div>
 
-          <div class="card reveal" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="projects/flashcards.html">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb flashcards-1"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb flashcards-1"></div>
               </div>
             </a>
             <h3>Flipping Flashcards</h3>
-            <p class="languages">javascript &middot; html &middot; css</p>
+            <p className="languages">javascript &middot; html &middot; css</p>
             <p>
               The study aid the world may not need. It serves flashcards from
               different fields of study and remembers how well you remember.
             </p>
             <p>
-              <a href="projects/flashcards.html" class="readmore">READ MORE</a>
-              <i class="fa-solid fa-angles-right"></i>
+              <a href="projects/flashcards.html" className="readmore">READ MORE</a>
+              <i className="fa-solid fa-angles-right"></i>
             </p>
           </div>
 
-          <div class="card reveal" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="projects/clock.html">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb clock-1"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb clock-1"></div>
               </div>
             </a>
             <h3>Workday Clock</h3>
-            <p class="languages">javascript &middot; html &middot; css</p>
+            <p className="languages">javascript &middot; html &middot; css</p>
             <p>
               All the benefits of an analog clock without the awkwardness of
               roundness.
             </p>
             <p>
-              <a href="projects/clock.html" class="readmore">READ MORE</a>
-              <i class="fa-solid fa-angles-right"></i>
+              <a href="projects/clock.html" className="readmore">READ MORE</a>
+              <i className="fa-solid fa-angles-right"></i>
             </p>
           </div>
         </div>
 
         <hr />
 
-        <h2 class="right-slide">Small projects</h2>
-        <p class="reveal small-description">
+        <h2 className="right-slide">Small projects</h2>
+        <p className="reveal small-description">
           One-concept, quick projects — that I still think are cool enough to
           share.
         </p>
-        <div class="cards" role="presentation">
-          <div class="card reveal" role="presentation">
+        <div className="cards" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="https://github.com/Star-Squid/employee-directory">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb employee"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb employee"></div>
               </div>
             </a>
             <h3>Employee Directory</h3>
-            <p class="languages">react &middot; css</p>
+            <p className="languages">react &middot; css</p>
             <p>
               Built in 2 weeks, this React project was made to a friend's
               specifications in order to address a problem in his workplace. The
@@ -197,14 +159,14 @@ export default function BarbaraPage() {
             </p>
           </div>
 
-          <div class="card reveal" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="https://star-squid.art">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb art"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb art"></div>
               </div>
             </a>
             <h3>Star Squid Studio</h3>
-            <p class="languages">javascript &middot; html &middot; css</p>
+            <p className="languages">javascript &middot; html &middot; css</p>
             <p>
               Art portfolio with modal image galleries and collapsible sections
             </p>
@@ -214,14 +176,14 @@ export default function BarbaraPage() {
             </p>
           </div>
 
-          <div class="card reveal" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="https://mb-malta.co.uk/DiceStats/">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb dice"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb dice"></div>
               </div>
             </a>
             <h3>Dice Stats</h3>
-            <p class="languages">
+            <p className="languages">
               javascript &middot; html &middot; css &middot; mocha
             </p>
             <p>
@@ -239,14 +201,14 @@ export default function BarbaraPage() {
 
             <ProjectCard title="Wildflower Memory" address="https://star-squid.github.io/memory" code="https://github.com/Star-Squid/memory" languages={["javascript", "html", "css"]}  keyword="memory" description="Classic memory game with illustrations of British meadow flowers"></ProjectCard>
 
-          <div class="card reveal" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="https://star-squid.github.io/memory">
-              <div class="contain-thumb">
-                <div class="thumb memory"></div>
+              <div className="contain-thumb">
+                <div className="thumb memory"></div>
               </div>
             </a>
             <h3>Wildflower Memory</h3>
-            <p class="languages">javascript &middot; html &middot; css</p>
+            <p className="languages">javascript &middot; html &middot; css</p>
             <p>
               Classic memory game with illustrations of British meadow flowers
             </p>
@@ -256,14 +218,14 @@ export default function BarbaraPage() {
             </p>
           </div>
 
-          <div class="card reveal" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="https://star-squid.github.io/flex-cv">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb flex-cv" role="presentation"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb flex-cv" role="presentation"></div>
               </div>
             </a>
             <h3>Flex CV</h3>
-            <div class="languages">html &middot; css</div>
+            <div className="languages">html &middot; css</div>
             <p>So many inflexible jobs can fit into flex containers</p>
             <p>
               <a href="https://star-squid.github.io/flex-cv">link</a> &middot;
@@ -272,14 +234,14 @@ export default function BarbaraPage() {
           </div>
 
           
-          <div class="card reveal" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="https://star-squid.github.io/high-five">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb high-five"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb high-five"></div>
               </div>
             </a>
             <h3>High Five!</h3>
-            <p class="languages">javascript &middot; html &middot; css</p>
+            <p className="languages">javascript &middot; html &middot; css</p>
 
             <p>A game of treats and tricks with my cat</p>
             <p>
@@ -288,14 +250,14 @@ export default function BarbaraPage() {
             </p>
           </div>
 
-          <div class="card reveal" role="presentation">
+          <div className="card reveal" role="presentation">
             <a href="https://star-squid.github.io/hookd">
-              <div class="contain-thumb" role="presentation">
-                <div class="thumb hookd"></div>
+              <div className="contain-thumb" role="presentation">
+                <div className="thumb hookd"></div>
               </div>
             </a>
             <h3>Hookd</h3>
-            <p class="languages">javascript &middot; html &middot; css</p>
+            <p className="languages">javascript &middot; html &middot; css</p>
 
             <p>
               While playing with Bootstrap, I may have invented the new hit app
@@ -312,7 +274,7 @@ export default function BarbaraPage() {
 
       <footer id="contact">
         <form
-          class="contact-form reveal"
+          className="contact-form reveal"
           method="post"
           action="https://formspree.io/f/xrgjjoyr"
         >
@@ -324,7 +286,7 @@ export default function BarbaraPage() {
               <label for="reason">what can I do for you?</label>
               <br />
               <input
-                class="wide-input good-height"
+                className="wide-input good-height"
                 type="text"
                 name="Reason"
                 list="reason"
@@ -340,7 +302,7 @@ export default function BarbaraPage() {
               <label for="name">name</label>
               <br />
               <input
-                class="wide-input good-height"
+                className="wide-input good-height"
                 id="name"
                 name="Name"
                 type="text"
@@ -353,7 +315,7 @@ export default function BarbaraPage() {
               <label for="email">email</label>
               <br />
               <input
-                class="wide-input good-height"
+                className="wide-input good-height"
                 id="email"
                 name="Email"
                 type="email"
@@ -366,7 +328,7 @@ export default function BarbaraPage() {
               <label for="message">your message</label>
               <br />
               <textarea
-                class="wide-input good-height"
+                className="wide-input good-height"
                 id="message"
                 name="Message"
                 rows="6"
@@ -376,9 +338,9 @@ export default function BarbaraPage() {
               ></textarea>
             </p>
 
-            <p class="checkbox-area">
+            <p className="checkbox-area">
               <input
-                class="good-height"
+                className="good-height"
                 type="checkbox"
                 id="human"
                 name="Human"
@@ -389,37 +351,37 @@ export default function BarbaraPage() {
               >
             </p>
 
-            <p class="button-area right-slide">
-              <button type="reset" class="pushable">
-                <span role="presentation" class="shadow"></span>
-                <span role="presentation" class="edge"></span>
-                <span class="frontbtn" role="button"> Clear </span>
+            <p className="button-area right-slide">
+              <button type="reset" className="pushable">
+                <span role="presentation" className="shadow"></span>
+                <span role="presentation" className="edge"></span>
+                <span className="frontbtn" role="button"> Clear </span>
               </button>
 
-              <button type="submit" name="Submit" class="pushable primary">
-                <span role="presentation" class="shadow"></span>
-                <span role="presentation" class="edge"></span>
-                <span class="frontbtn" role="button"> Send! </span>
+              <button type="submit" name="Submit" className="pushable primary">
+                <span role="presentation" className="shadow"></span>
+                <span role="presentation" className="edge"></span>
+                <span className="frontbtn" role="button"> Send! </span>
               </button>
             </p>
           </fieldset>
         </form>
       </footer>
 
-      <div class="egg">
+      <div className="egg">
         <a href="img/egg.gif">
-          <i class="fa-solid fa-egg" title="closing thoughts"></i>
+          <i className="fa-solid fa-egg" title="closing thoughts"></i>
         </a>
       </div>
 
-      <div class="modal modal-closed">
+      <div className="modal modal-closed">
         <p>
-          <button class="modal-close" aria-label="close">✖</button>
+          <button className="modal-close" aria-label="close">✖</button>
         </p>
         <img id="modal-img" src="thumbs/clock.webp" alt="website screenshot" />
       </div>
 
-      <div class="modal-overlay reveal"></div>
+      <div className="modal-overlay reveal"></div>
     </div>
 
           )

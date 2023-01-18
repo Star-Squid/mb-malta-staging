@@ -1,0 +1,36 @@
+.w-100{
+    width: 100%;
+}
+
+.w-full{
+    width: 100vw;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.h-full{
+    height: 100vh;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.h-50{
+    height: 50%;
+}
+
+.vpadding-1rem{
+    padding: 1rem 0;
+}
+
+.hpadding-1rem{
+    padding: 0 1rem;
+}
+
+.grid-centered{
+    display: grid;
+    place-content: center;
+}

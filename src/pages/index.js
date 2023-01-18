@@ -1,5 +1,5 @@
 import * as React from "react"
-import "../styles/entry.scss"
+import "../styles/entry-main.scss"
 // import grain from "../assets/grain.png"
 import Hero from "../assets/mbandc.png"
 

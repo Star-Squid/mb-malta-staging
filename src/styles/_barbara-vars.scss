@@ -2,7 +2,7 @@
 
 
     $medium-fontsize: clamp(1rem, 2vmin, 2rem);
-    
+
     $base-fontfamily: "PT Sans", sans-serif;
     $fancy-fontfamily: "Unica One", cursive;
 
@@ -11,10 +11,10 @@
     $transparent: rgba(1, 1, 1, 0);
     $white: #ffffff;
     $almostwhite: #cccccc;
-    $electricblue: #27c3f1;
-    $blue: #9dc3ce;
-    $pink: #c12240;
-    $steel: #1d3f55;
+    $accent: #27c3f1;
+    $secondary: #9dc3ce;
+    $complement: #c12240;
+    $primary: #1d3f55;
   
     $black: #1c1618;
     $dark: #212121;

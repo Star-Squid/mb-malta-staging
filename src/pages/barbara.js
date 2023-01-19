@@ -27,7 +27,7 @@ export default function BarbaraPage() {
         </div>
       </Section>
 
-      <section id="about">
+      <Section id="about">
         <div className="about-project" role="presentation">
           <img
             className="face reveal"
@@ -64,9 +64,9 @@ export default function BarbaraPage() {
             </p>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section id="projects">
+      <Section id="projects">
         <hr />
         <h2 className="reveal">Favourite projects</h2>
         <p className="reveal small-description">
@@ -168,7 +168,7 @@ export default function BarbaraPage() {
             <h3>Star Squid Studio</h3>
             <p className="languages">javascript &middot; html &middot; css</p>
             <p>
-              Art portfolio with modal image galleries and collapsible sections
+              Art portfolio with modal image galleries and collapsible Sections
             </p>
             <p>
               <a href="https://star-squid.art">link</a> &middot;
@@ -270,7 +270,7 @@ export default function BarbaraPage() {
 
           
         </div>
-      </section>
+      </Section>
 
       <footer id="contact">
         <form

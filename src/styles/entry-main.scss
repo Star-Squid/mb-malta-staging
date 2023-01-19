@@ -1,23 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap");
+
 @import "./boxsizing";
 @import "./layoutcomponents";
 @import "./link";
+@import "./entry-vars";
 
 body {
-  background: #13240b;
-  background: linear-gradient(
-      180deg,
-      #0f1307 1%,
-      #01010100 10% 95%,
-      #0f1307e6 100%
-    ),
-    radial-gradient(circle, #1e3d0ee6 20%, #0f1307e6 75%),
-    radial-gradient(circle, #1e3d0ee0 25%, #13240be0 55%),
-    url("../assets/grain.png");
+  background: $dark;
+  background: $background-stack;
 
-  color: #fff;
-  font-family: "Mr Bedfort", cursive;
-  font-size: clamp(3rem, 11vmin, 5rem);
+  color: $white;
+  font-family: $fancy-fontfamily;
+  font-size: $header-fontsize;
   overflow-x: hidden;
 }
 
@@ -32,8 +25,6 @@ body {
 // }
 
 .container {
-  // width: 100vw;
-  // min-height: 100vh;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -41,10 +32,9 @@ body {
 }
 
 .title {
-  color: #fff;
-  font-family: "Mr Bedfort", cursive;
-  // font-size: 11vmin;
-  font-size: clamp(3rem, 11vmin, 5rem);
+  color: $white;
+  font-family: $fancy-fontfamily;
+  font-size: $header-fontsize;
   width: 80vmin;
   height: 45vmin;
   padding: 3vmin 5vmin 5vmin 5vmin;

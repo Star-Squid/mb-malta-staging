@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap");
+
+$medium-fontsize: clamp(1rem, 2vmin, 2rem);
+$header-fontsize: clamp(3rem, 11vmin, 5rem);
+
+$base-fontfamily: "PT Sans", sans-serif;
+$fancy-fontfamily: "Mr Bedfort", cursive;
+
+$background-stack: linear-gradient(
+    180deg,
+    #0f1307 1%,
+    #01010100 10% 95%,
+    #0f1307e6 100%
+  ),
+  radial-gradient(circle, #1e3d0ee6 20%, #0f1307e6 75%),
+  radial-gradient(circle, #1e3d0ee0 25%, #13240be0 55%),
+  url("../assets/grain.png");
+
+$transparent: rgba(1, 1, 1, 0);
+$white: #ffffff;
+$almostwhite: #cccccc;
+
+$black: #1c1618;
+$dark: #212121;
+$halfdark: #212121e1;
+$medium: #3e3e3e;
+$halfmedium: #3e3e3ecc;
+
+$scrollbar-bg: #212121;
+$scrollthumb-bg: #cccccc;

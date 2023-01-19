@@ -1,14 +1,13 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import "../styles/404.scss"
-
+import * as React from "react";
+import { Link } from "gatsby";
+import "../styles/404.scss";
 
 const NotFoundPage = () => {
   return (
-    <main className="container">
-      <h1>Page not found</h1>
-      <p>
-        Sorry, we couldn’t find what you were looking for.
+    <div className="contain-404 grid-centered">
+      <h1 className="h1">Page not found</h1>
+      <p className="subtitle">
+        Sorry, the page you're looking for is not at this address.
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
@@ -20,10 +19,10 @@ const NotFoundPage = () => {
         <br />
         <Link to="/">Back to home page</Link>.
       </p>
-    </main>
-  )
-}
+    </div>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Not found</title>;

@@ -1,0 +1,82 @@
+.contact-form {
+    size: 70%, 70%;
+    padding: 3rem;
+    color: var(--almostwhite);
+  }
+  
+  fieldset {
+    padding: 2rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.35);
+    border: none;
+  }
+  
+  .wide-input {
+    width: 100%;
+  }
+  
+  .good-height {
+    font-size: var(--regular);
+    background-color: var(--medium);
+    color: var(--white);
+    border-width: 0px;
+    border-style: none;
+    border-color: var(--medium);
+    border-image: none;
+    border-bottom: var(--almostwhite) solid 1px;
+  }
+  
+  datalist {
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: var(--regular);
+    text-rendering: auto;
+    color: var(--white);
+    background-color: var(--medium);
+    border-style: none;
+    border-color: var(--medium);
+    border-image: none;
+    padding: 2px;
+  }
+  
+  textarea {
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: var(--regular);
+    text-rendering: auto;
+    color: var(--white);
+    background-color: var(--medium);
+    border-style: none;
+    border-color: var(--medium);
+    border-image: none;
+    padding: 2px;
+  }
+  
+  input[type="checkbox"] {
+    display: inline-block;
+    appearance: none;
+    color: var(--white);
+    width: var(--regular);
+    height: var(--regular);
+    background-color: var(--medium);
+    background-clip: content-box;
+    border: 2px solid var(--almostwhite);
+    border-image: none;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: var(--white);
+    padding: 2px;
+  }
+  
+  .button-area {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  
+  .checkbox-area {
+    display: flex;
+    gap: 20px;
+    justify-content: first baseline;
+  }

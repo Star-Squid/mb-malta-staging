@@ -1,62 +1,70 @@
 @import "./barbara-vars";
 @import "./reset";
+@import "./layoutcomponents";
+@import "./scrollbar";
+@import "./link";
+  
+@include link($link, $link-hover);
+@include scrollbar($scrollthumb-bg, $scrollbar-bg);
+  
+  
+  // body {
+  //   height: 100vh;
+  //   width: 100vw;
+  //   font-family: $base-font;
+  //   color: $white;
+  //   font-size: $base-fontsize;
+  //   text-align: justify;
+  //   text-justify: inter-word;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   background-color: $dark;
+  //   scrollbar-width: thin;
+  //   scrollbar-color: $scrollthumb-bg $scrollbar-bg;
+  //   overflow-x: hidden;
+  // }
+  
+  // body::-webkit-scrollbar {
+  //   width: 11px;
+  // }
+  // body::-webkit-scrollbar-track {
+  //   background: $scrollbar-bg;
+  // }
+  // body::-webkit-scrollbar-thumb {
+  //   background-color: $scrollthumb-bg;
+  //   border-radius: 6px;
+  //   border: 3px solid $scrollbar-bg;
+  // }
+  
+  // a {
+  //   color: $accent;
+  //   font-weight: bolder;
+  //   transition: all 0.2s ease-in-out;
+  // }
+  // a:hover,
+  // a:active,
+  // a:focus {
+  //   color: $almostwhite;
+  // }
 
-  
-  
-  body {
-    height: 100vh;
-    width: 100vw;
-    font-family: $base-font;
-    color: $white;
-    font-size: $base-fontsize;
-    text-align: justify;
-    text-justify: inter-word;
-    width: 100vw;
-    height: 100vh;
-    background-color: $dark;
-    scrollbar-width: thin;
-    scrollbar-color: $scrollthumb-bg $scrollbar-bg;
-    overflow-x: hidden;
+  .contain-404{
+    width: 100%;
+    min-height: 100vh;
   }
   
-  body::-webkit-scrollbar {
-    width: 11px;
-  }
-  body::-webkit-scrollbar-track {
-    background: $scrollbar-bg;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: $scrollthumb-bg;
-    border-radius: 6px;
-    border: 3px solid $scrollbar-bg;
-  }
-  
-  a {
-    color: $accent;
-    font-weight: bolder;
-    transition: all 0.2s ease-in-out;
-  }
-  a:hover,
-  a:active,
-  a:focus {
-    color: $almostwhite;
-  }
-  
-  h1 {
-    font-family: "Unica One", cursive;
+  .h1 {
+    font-family: $fancy-font;
     color: $white;
     font-size: calc($base-fontsize + 8vmin);
     margin: 0px;
     padding: 0px 0px 10px 0px;
     font-weight: 800;
-    text-align: left;
+    text-align: center;
   }
   
-  h2 {
-    font-family: "Unica One", cursive;
-    font-size: calc($base-fontsize + 3vmin);
-    margin: 0px;
-    padding: 0px;
+  .subtitle{
+    font-family: $base-font;
     color: $almostwhite;
+    font-size: calc($base-fontsize + 2vmin);
   }
  

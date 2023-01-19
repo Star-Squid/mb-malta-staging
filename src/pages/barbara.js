@@ -4,6 +4,8 @@ import ProjectCard from "../barbara-components/ProjectCard"
 import Navbar from "../barbara-components/Navbar"
 import Sidebar from "../barbara-components/Sidebar"
 import Section from "../barbara-layout/Section"
+import Modal from "../barbara-layout/Modal"
+import Paragraph from "../barbara-layout/Paragraph"
 
 export default function BarbaraPage() {
   return (
@@ -38,30 +40,30 @@ export default function BarbaraPage() {
           <div role="presentation">
             <h2 className="right-slide">About</h2>
 
-            <p className="right-slide">
+            <Paragraph animate="right">
               When I coded my first “Hello World” using Notepad on Windows 98,
               it felt like the most significant and eye-opening activity in the
               world. However, aside from a number of gif-enriched personal pages and
               blogs, that period did not have any substantial outcomes.
-            </p>
+            </Paragraph>
 
-            <p className="right-slide">
+            <Paragraph animate="right">
               I renewed my study of code in 2021, and based on previous
               experiences, made web development my focus. I am now a great fan
               of flexbox-based layouts and JavaScript. I still have a certain
               affinity for retro-style design, but I refrain from using neon
               text effects.<br />
               <span className="flicker">Most of the time.</span>
-            </p>
+            </Paragraph>
 
-            <p className="right-slide">
+            <Paragraph animate="right">
               I am making efforts to focus more on the backend side of coding,
               because it seems more "serious", but whenever I see a
               well-designed website, I will spend hours checking what makes it
               work. It seems that every little topic I learn deserves its own
               stand-alone project. Not all ideas can be turned into reality, but
               below are the ones that made it.
-            </p>
+            </Paragraph>
           </div>
         </div>
       </Section>
@@ -373,16 +375,33 @@ export default function BarbaraPage() {
           <i className="fa-solid fa-egg" title="closing thoughts"></i>
         </a>
       </div>
-
-      <div className="modal modal-closed">
+<Modal></Modal>
+      {/* <div className="modal modal-closed">
         <p>
           <button className="modal-close" aria-label="close">✖</button>
         </p>
         <img id="modal-img" src="thumbs/clock.webp" alt="website screenshot" />
       </div>
 
-      <div className="modal-overlay reveal"></div>
-    </div>
+
+      <div className="modal-overlay reveal"></div> */}
+    </div> 
 
           )
 }
+
+export const Head = () => <title>Barbara's Portfolio</title>;
+
+{/* const SEO = ({ children }) => (
+  <>
+    <title>Barbara's Portfolio</title>
+    <link id="icon" rel="icon" href="global-icon" />
+    {children}
+  </>
+)
+
+export const Head = () => (
+  <SEO>
+    <link id="icon" rel="icon" href="icon-specific-for-this-page" />
+  </SEO>
+) */}

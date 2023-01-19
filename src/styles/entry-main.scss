@@ -4,20 +4,36 @@
 @import "./entry-vars";
 @import "./scrollbar";
 
-body {
-  background: $dark;
-  background: $background-stack;
+// body {
+//   background: $dark;
+//   background: $background-stack;
 
-  color: $white;
-  font-family: $fancy-fontfamily;
-  font-size: $header-fontsize;
-  overflow-x: hidden;
-}
+//   color: $white;
+//   font-family: $fancy-font;
+//   font-size: $header-fontsize;
+//   overflow-x: hidden;
+// }
 
 @include link($link, $link-hover);
 @include scrollbar($scrollthumb-bg, $scrollbar-bg);
 
+body{
+  position: relative;
+}
+
 .container {
+  width: 100%;
+  min-height: 100vh;
+  position:absolute;
+  top: 0;
+  left: -10px;
+  background: $dark;
+  background: $background-stack;
+
+  color: $white;
+  font-family: $fancy-font;
+  font-size: $header-fontsize;
+
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -26,10 +42,9 @@ body {
 
 .title {
   color: $white;
-  font-family: $fancy-fontfamily;
+  font-family: $fancy-font;
   font-size: $header-fontsize;
   width: 80vmin;
-  height: 45vmin;
   padding: 3vmin 5vmin 5vmin 5vmin;
 }
 

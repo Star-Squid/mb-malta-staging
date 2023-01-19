@@ -6,3 +6,5 @@ export default function MateuszPage() {
     <div className="grid-centered w-full h-full" role="presentation">Mat's Projects</div>
   )
 }
+
+export const Head = () => <title>Mat's Projects</title>;

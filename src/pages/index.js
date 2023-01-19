@@ -4,9 +4,9 @@ import Hero from "../assets/mbandc.png";
 
 const IndexPage = () => {
   return (
-    <div className="container w-full h-full">
-      <div styleName="title">
-        <div styleName="words">
+    <div className="container">
+      <div className="title">
+        <div className="words">
           <a href="https://star-squid.github.io/">&nbsp;Barbara</a>,&nbsp;
           <a href="https://landsil.github.io/mateusz/">Mat</a>,
           <br />

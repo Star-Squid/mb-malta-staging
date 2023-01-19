@@ -1,5 +1,6 @@
 
-body{
+  @mixin scrollbar($scrollthumb-bg, $scrollbar-bg) {
+    body{
     scrollbar-width: thin;
     scrollbar-color: $scrollthumb-bg $scrollbar-bg;
 }
@@ -14,3 +15,4 @@ body{
     border-radius: 6px;
     border: 3px solid $scrollbar-bg;
   }
+}

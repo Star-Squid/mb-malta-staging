@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap");
 
-$medium-fontsize: clamp(1rem, 2vmin, 2rem);
+$base-fontsize: clamp(1rem, 2vmin, 2rem);
 $header-fontsize: clamp(3rem, 11vmin, 5rem);
 
-$base-fontfamily: "PT Sans", sans-serif;
+$base-font: "PT Sans", sans-serif;
 $fancy-fontfamily: "Mr Bedfort", cursive;
 
 $background-stack: linear-gradient(
@@ -19,12 +19,16 @@ $background-stack: linear-gradient(
 $transparent: rgba(1, 1, 1, 0);
 $white: #ffffff;
 $almostwhite: #cccccc;
-
 $black: #1c1618;
 $dark: #212121;
 $halfdark: #212121e1;
 $medium: #3e3e3e;
 $halfmedium: #3e3e3ecc;
 
-$scrollbar-bg: #212121;
-$scrollthumb-bg: #cccccc;
+$accent: #b9bf4d;
+
+$scrollbar-bg: $dark;
+$scrollthumb-bg: $medium;
+
+$link: $white;
+$link-hover: $accent;

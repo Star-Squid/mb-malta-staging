@@ -1,9 +1,9 @@
   @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Unica+One&display=swap');
 
 
-    $medium-fontsize: clamp(1rem, 2vmin, 2rem);
+    $base-fontsize: clamp(1rem, 2vmin, 2rem);
 
-    $base-fontfamily: "PT Sans", sans-serif;
+    $base-font: "PT Sans", sans-serif;
     $fancy-fontfamily: "Unica One", cursive;
 
     $background-img: url("../assets/keyboard.webp");
@@ -25,4 +25,5 @@
     $scrollbar-bg: #212121;
     $scrollthumb-bg: #cccccc;
   
-  
+    $link: $accent;
+    $link-hover: $almostwhite;

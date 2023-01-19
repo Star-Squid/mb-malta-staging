@@ -4,7 +4,7 @@ import Hero from "../assets/mbandc.png";
 
 const IndexPage = () => {
   return (
-    <main styleName="container w-full h-full">
+    <div className="container w-full h-full">
       <div styleName="title">
         <div styleName="words">
           <a href="https://star-squid.github.io/">&nbsp;Barbara</a>,&nbsp;
@@ -18,7 +18,7 @@ const IndexPage = () => {
       {/* <img src="../assets/mbandc.png" alt="yay"></img>
     <img src={grain} alt="nope"></img> */}
 
-      <div id="image-group" className="image-group">
+      <div className="image-group">
         <img src={Hero} alt="Portrait of Barbara, Mat, and Cat" />
 
         <svg
@@ -904,7 +904,7 @@ const IndexPage = () => {
           </g>
         </svg>
       </div>
-    </main>
+    </div>
   );
 };
 

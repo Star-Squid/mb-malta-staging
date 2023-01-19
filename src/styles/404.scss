@@ -1,14 +1,14 @@
 @import "./barbara-vars";
-@import "./boxsizing";
+@import "./reset";
 
   
   
   body {
     height: 100vh;
     width: 100vw;
-    font-family: $base-fontfamily;
+    font-family: $base-font;
     color: $white;
-    font-size: $medium-fontsize;
+    font-size: $base-fontsize;
     text-align: justify;
     text-justify: inter-word;
     width: 100vw;
@@ -32,7 +32,7 @@
   }
   
   a {
-    color: $blue;
+    color: $accent;
     font-weight: bolder;
     transition: all 0.2s ease-in-out;
   }
@@ -45,7 +45,7 @@
   h1 {
     font-family: "Unica One", cursive;
     color: $white;
-    font-size: calc($medium-fontsize + 8vmin);
+    font-size: calc($base-fontsize + 8vmin);
     margin: 0px;
     padding: 0px 0px 10px 0px;
     font-weight: 800;
@@ -54,7 +54,7 @@
   
   h2 {
     font-family: "Unica One", cursive;
-    font-size: calc($medium-fontsize + 3vmin);
+    font-size: calc($base-fontsize + 3vmin);
     margin: 0px;
     padding: 0px;
     color: $almostwhite;

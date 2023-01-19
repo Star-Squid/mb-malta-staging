@@ -1,9 +1,20 @@
-a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  a:hover,
-  a:active {
-    color: #b9bf4d;
+
+  @mixin link($link, $link-hover) {
+    a {
+        text-decoration: none;
+        color: $link;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      a:hover,
+      a:active {
+        color: $link-hover;
+      }
+
+      a:focus{
+        color: $link-hover;
+        border: dashed transparentize($link, 0.2) thin;
+      }
+
   }

@@ -9,7 +9,7 @@ module.exports = {
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-google-gtag", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/barbara-assets/icon.png"
     }
   }]
 };

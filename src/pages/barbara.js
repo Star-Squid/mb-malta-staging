@@ -7,6 +7,10 @@ import Section from "../barbara-layout/Section"
 import Modal from "../barbara-layout/Modal"
 import Paragraph from "../barbara-layout/Paragraph"
 import SkipLink from "../barbara-components/SkipLink"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' 
+
+
 
 export default function BarbaraPage() {
   return (
@@ -24,6 +28,12 @@ export default function BarbaraPage() {
               <br />
               I am Barbara Malta
             </h1>
+
+            <FontAwesomeIcon icon={solid('user-secret')} />
+{/* <FontAwesomeIcon icon={regular('coffee')} />
+<FontAwesomeIcon icon={icon({name: 'coffee', style: 'solid'})} /> */}
+{/* <FontAwesomeIcon icon={brands('twitter')} /> */}
+
           </div>
           <div className="description reveal">
             frontend developer

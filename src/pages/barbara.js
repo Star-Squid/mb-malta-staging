@@ -6,10 +6,12 @@ import Sidebar from "../barbara-components/Sidebar"
 import Section from "../barbara-layout/Section"
 import Modal from "../barbara-layout/Modal"
 import Paragraph from "../barbara-layout/Paragraph"
+import SkipLink from "../barbara-components/SkipLink"
 
 export default function BarbaraPage() {
   return (
-    <div className="container" role="presentation">
+    <div className="container-animated" role="presentation">
+      <SkipLink></SkipLink>
       <Navbar></Navbar>
 
       <Sidebar></Sidebar>
@@ -29,7 +31,7 @@ export default function BarbaraPage() {
         </div>
       </Section>
 
-      <Section id="about">
+      <Section id="main">
         <div className="about-project" role="presentation">
           <img
             className="face reveal"

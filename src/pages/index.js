@@ -1,6 +1,6 @@
 import * as React from "react";
 import "../styles/entry-main.scss";
-import Hero from "../assets/mbandc.png";
+import Hero from "../entry-assets/mbandc.png";
 
 const IndexPage = () => {
   return (
@@ -15,7 +15,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      {/* <img src="../assets/mbandc.png" alt="yay"></img>
+      {/* <img src="../entry-assets/mbandc.png" alt="yay"></img>
     <img src={grain} alt="nope"></img> */}
 
       <div className="image-group">

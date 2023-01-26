@@ -4,7 +4,7 @@ import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 export default function () {
   return (
-    <nav class="icons">
+    <nav className="icons-bar">
       <ul>
       
         <li>

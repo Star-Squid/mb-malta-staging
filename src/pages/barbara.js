@@ -7,8 +7,9 @@ import Section from "../barbara-layout/Section"
 import Modal from "../barbara-layout/Modal"
 import Paragraph from "../barbara-layout/Paragraph"
 import SkipLink from "../barbara-components/SkipLink"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' 
+import Portrait from "../barbara-assets/faces-with-eyes.webp"
+import ContactForm from "../barbara-components/ContactForm"
+import Footer from "../barbara-components/Footer"
 
 
 
@@ -29,10 +30,6 @@ export default function BarbaraPage() {
               I am Barbara Malta
             </h1>
 
-            <FontAwesomeIcon icon={solid('user-secret')} />
-{/* <FontAwesomeIcon icon={regular('coffee')} />
-<FontAwesomeIcon icon={icon({name: 'coffee', style: 'solid'})} /> */}
-{/* <FontAwesomeIcon icon={brands('twitter')} /> */}
 
           </div>
           <div className="description reveal">
@@ -45,7 +42,7 @@ export default function BarbaraPage() {
         <div className="about-project" role="presentation">
           <img
             className="face reveal"
-            src="img/faces-with-eyes.webp"
+            src={Portrait}
             alt="Barbara with Potato the cat"
           />
 
@@ -53,7 +50,7 @@ export default function BarbaraPage() {
             <h2 className="right-slide">About</h2>
 
             <Paragraph animate="right">
-              When I coded my first “Hello World” using Notepad on Windows 98,
+              When I coded my first “Hello World” in Notepad on Windows 98,
               it felt like the most significant and eye-opening activity in the
               world. However, aside from a number of gif-enriched personal pages and
               blogs, that period did not have any substantial outcomes.
@@ -286,108 +283,15 @@ export default function BarbaraPage() {
         </div>
       </Section>
 
-      <footer id="contact">
-        <form
-          className="contact-form reveal"
-          method="post"
-          action="https://formspree.io/f/xrgjjoyr"
-        >
-          <fieldset>
-            <legend>
-              <h2>Get in touch!</h2>
-            </legend>
-            <p>
-              <label for="reason">what can I do for you?</label>
-              <br />
-              <input
-                className="wide-input good-height"
-                type="text"
-                name="Reason"
-                list="reason"
-              />
-              <datalist id="reason">
-                <option>Work with me</option>
-                <option>Help me out</option>
-                <option>Feedback about this website</option>
-                <option>Check out this dad joke</option>
-              </datalist>
-            </p>
-            <p>
-              <label for="name">name</label>
-              <br />
-              <input
-                className="wide-input good-height"
-                id="name"
-                name="Name"
-                type="text"
-                placeholder="your name"
-                required
-              />
-            </p>
+      <Section id="contact" className="contact-form">
+        <ContactForm></ContactForm>
+      </Section>
 
-            <p>
-              <label for="email">email</label>
-              <br />
-              <input
-                className="wide-input good-height"
-                id="email"
-                name="Email"
-                type="email"
-                placeholder="name@email.com"
-                required
-              />
-            </p>
+<Footer></Footer>
+      
+{/* <Modal></Modal> */}
 
-            <p>
-              <label for="message">your message</label>
-              <br />
-              <textarea
-                className="wide-input good-height"
-                id="message"
-                name="Message"
-                rows="6"
-                minlength="4"
-                maxlength="3000"
-                required
-              ></textarea>
-            </p>
 
-            <p className="checkbox-area">
-              <input
-                className="good-height"
-                type="checkbox"
-                id="human"
-                name="Human"
-                value="human"
-              />
-              <label for="human"
-                >&nbsp; I am a human, vegetable, or mineral</label
-              >
-            </p>
-
-            <p className="button-area right-slide">
-              <button type="reset" className="pushable">
-                <span role="presentation" className="shadow"></span>
-                <span role="presentation" className="edge"></span>
-                <span className="frontbtn" role="button"> Clear </span>
-              </button>
-
-              <button type="submit" name="Submit" className="pushable primary">
-                <span role="presentation" className="shadow"></span>
-                <span role="presentation" className="edge"></span>
-                <span className="frontbtn" role="button"> Send! </span>
-              </button>
-            </p>
-          </fieldset>
-        </form>
-      </footer>
-
-      <div className="egg">
-        <a href="img/egg.gif">
-          <i className="fa-solid fa-egg" title="closing thoughts"></i>
-        </a>
-      </div>
-<Modal></Modal>
       {/* <div className="modal modal-closed">
         <p>
           <button className="modal-close" aria-label="close">✖</button>

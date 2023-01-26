@@ -3,7 +3,7 @@ import ProjectLanguages from "./ProjectLanguages"
 import * as React from "react"
 export default function ProjectCard(props){
     return(
-        <div class="card reveal" role="presentation">
+        <div className="card reveal" role="presentation">
             <a href={props.address}>
               <div className="contain-thumb">
                 {/* below div originally has class thumb also */}

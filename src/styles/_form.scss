@@ -1,7 +1,10 @@
+@import "./barbara-vars";
+
+
 .contact-form {
     size: 70%, 70%;
     padding: 3rem;
-    color: var(--almostwhite);
+    color: $almostwhite;
   }
   
   fieldset {
@@ -15,38 +18,38 @@
   }
   
   .good-height {
-    font-size: var(--regular);
-    background-color: var(--medium);
-    color: var(--white);
+    font-size: $base-fontsize;
+    background-color: $medium;
+    color: $white;
     border-width: 0px;
     border-style: none;
-    border-color: var(--medium);
+    border-color: $medium;
     border-image: none;
-    border-bottom: var(--almostwhite) solid 1px;
+    border-bottom: $almostwhite solid 1px;
   }
   
   datalist {
-    font-family: "PT Sans", sans-serif;
+    font-family: $base-font;
     font-weight: normal;
-    font-size: var(--regular);
+    font-size: $base-fontsize;
     text-rendering: auto;
-    color: var(--white);
-    background-color: var(--medium);
+    color: $white;
+    background-color: $medium;
     border-style: none;
-    border-color: var(--medium);
+    border-color: $medium;
     border-image: none;
     padding: 2px;
   }
   
   textarea {
-    font-family: "PT Sans", sans-serif;
+    font-family: $base-font;
     font-weight: normal;
-    font-size: var(--regular);
+    font-size: $base-fontsize;
     text-rendering: auto;
-    color: var(--white);
-    background-color: var(--medium);
+    color: $white;
+    background-color: $medium;
     border-style: none;
-    border-color: var(--medium);
+    border-color: $medium;
     border-image: none;
     padding: 2px;
   }
@@ -54,17 +57,17 @@
   input[type="checkbox"] {
     display: inline-block;
     appearance: none;
-    color: var(--white);
-    width: var(--regular);
-    height: var(--regular);
-    background-color: var(--medium);
+    color: $white;
+    width: $base-fontsize;
+    height: $base-fontsize;
+    background-color: $medium;
     background-clip: content-box;
-    border: 2px solid var(--almostwhite);
+    border: 2px solid $almostwhite;
     border-image: none;
   }
   
   input[type="checkbox"]:checked {
-    background-color: var(--white);
+    background-color: $white;
     padding: 2px;
   }
   

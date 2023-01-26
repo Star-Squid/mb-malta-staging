@@ -6,7 +6,7 @@ export default function () {
       <ul>
         <li>
           <a href="#header">
-            <h2 class="logo">BM</h2>
+            <h2 className="logo">BM</h2>
           </a>
         </li>
         <li>

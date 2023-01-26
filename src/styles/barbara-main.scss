@@ -1,7 +1,7 @@
-@import "./barbara-vars";
+@use "./barbara-vars" as *;
+@use "./link" as *;
 @import "./reset";
 @import "./scrollbar";
-@import "./link";
 @import "./animations";
 @import "./form";
 @import "./button";
@@ -32,7 +32,7 @@
   }
   
   h2 {
-    font-family: "Unica One", cursive;
+    font-family: $fancy-font;
     font-size: calc($base-fontsize + 3vmin);
     margin: 0px;
     padding: 0px;
@@ -47,7 +47,7 @@
   }
   
   h3 {
-    font-family: "Unica One", cursive;
+    font-family: $fancy-font;
     color: $almostwhite;
     font-size: calc($base-fontsize + 1vmin);
     padding: 0px;
@@ -97,6 +97,10 @@
     font-weight: bolder;
     text-decoration: none;
   }
+
+  .links a:hover {
+    color: $accent;
+  }
   
   .links li {
     padding: 1rem;
@@ -117,29 +121,30 @@
     translate: 0;
   }
   
-  .icons {
+  .icons-bar {
     z-index: 2;
     position: fixed;
     right: -2px;
     top: 50%;
     background-color: $halfdark;
+
+    ul {
+      list-style-type: none;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 0px;
+    }
+
+    li {
+      padding: 16px;
+      display: list-item;
+      text-align: center;
+    }
+    
   }
-  
-  .icons ul {
-    list-style-type: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
-  
-  .icons li {
-    padding: 16px;
-    display: list-item;
-    text-align: center;
-  }
-  
+
   #header {
     position: relative;
     display: block;
@@ -171,7 +176,7 @@
     animation: slideFromBottom 3s;
   }
 
-  section {
+  .section {
     margin: 0px;
     padding: 2rem 10%;
     width: 100%;
@@ -191,22 +196,22 @@
     cursor: auto;
   }
 
-  .contain-portrait {
-    width: 100%;
-    position: relative;
-    top: -40%;
-    left: -4rem;
-  }
-  .eyes {
-    width: 100%;
-    aspect-ratio: auto;
-    position: relative;
-    left: -4rem;
-  }
+  // .contain-portrait {
+  //   width: 100%;
+  //   position: relative;
+  //   top: -40%;
+  //   left: -4rem;
+  // }
+  // .eyes {
+  //   width: 100%;
+  //   aspect-ratio: auto;
+  //   position: relative;
+  //   left: -4rem;
+  // }
   .face {
     width: 100%;
     aspect-ratio: auto;
-    position: absolute;
+    // position: absolute;
   }
   
   #projects > h2 {
@@ -334,7 +339,7 @@
     align-self: start;
   }
   
-  footer {
+  .contact-form {
     position: relative;
     margin: 0px;
     width: 100%;

@@ -196,18 +196,6 @@
     cursor: auto;
   }
 
-  // .contain-portrait {
-  //   width: 100%;
-  //   position: relative;
-  //   top: -40%;
-  //   left: -4rem;
-  // }
-  // .eyes {
-  //   width: 100%;
-  //   aspect-ratio: auto;
-  //   position: relative;
-  //   left: -4rem;
-  // }
   .face {
     width: 100%;
     aspect-ratio: auto;
@@ -221,7 +209,7 @@
   }
   
   .ordinal {
-    font-family: "Unica One", cursive;
+    font-family: $fancy-font;
     color: $almostwhite;
     font-size: calc($base-fontsize + 1vmin);
     padding: 0px;
@@ -261,7 +249,7 @@
   }
   
   .flashcards-start {
-    background: url("../barbara-assets/thumbs/flashcards-start.webp");
+    background: url("../barbara-assets/thumbs/flashcards.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

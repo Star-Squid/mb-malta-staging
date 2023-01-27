@@ -1,27 +1,27 @@
 import * as React from "react";
 import Button from "./Button";
 
-  const content = {
-    d : "",
-    d : "",
-    d : "",
-    d : "",
-    d : "",
-    d : "",
-    d : "",
-    d : "",
-    d : "",
-    d : "",
-  }
+  // const content = {
+  //   d : "",
+  //   d : "",
+  //   d : "",
+  //   d : "",
+  //   d : "",
+  //   d : "",
+  //   d : "",
+  //   d : "",
+  //   d : "",
+  //   d : "",
+  // }
 
 function TextInput(props){
 return(<p>
-  <label for={props.key}>{props.label}</label>
+  <label htmlFor={props.keyword}>{props.label}</label>
   <br />
   <input
     className="wide-input good-height"
-    id={props.key}
-    name={props.key}
+    id={props.keyword}
+    name={props.keyword}
     type="text"
     placeholder={props.placeholder}
     required
@@ -32,16 +32,16 @@ return(<p>
 // function DataList(props){
 //   return(
 //     <p>
-//     <label for={props.key}>{props.label}</label>
+//     <label htmlFor={props.keyword}>{props.label}</label>
 //     <br />
 //     <input
 //       className="wide-input good-height"
 //       type="text"
-//       name={props.key}
-//       list={props.key}
+//       name={props.keyword}
+//       list={props.keyword}
 //       placeholder={props.placeholder}
 //     />
-//     <datalist id={props.key}>
+//     <datalist id={props.keyword}>
 //       <option>Work with me</option>
 //       <option>Help me out</option>
 //       <option>Feedback about this website</option>
@@ -53,13 +53,13 @@ return(<p>
 
 function EmailInput(props){
 return(        <p>
-  <label for={props.key}>{props.label}</label>
+  <label htmlFor={props.keyword}>{props.label}</label>
   <br />
   <input
     className="wide-input good-height"
-    id={props.key}
-    name={props.key}
-    type={props.key}
+    id={props.keyword}
+    name={props.keyword}
+    type={props.keyword}
     placeholder={props.placeholder}
     required
   />
@@ -70,16 +70,16 @@ return(        <p>
 function TextBox(props){
   return(
     <p>
-    <label for={props.key}>{props.label}</label>
+    <label htmlFor={props.keyword}>{props.label}</label>
     <br />
     <textarea
       className="wide-input good-height"
       placeholder={props.placeholder}
-      id={props.key}
-      name={props.key}
+      id={props.keyword}
+      name={props.keyword}
       rows="6"
-      minlength="4"
-      maxlength="3000"
+      minLength="4"
+      maxLength="3000"
       required
     ></textarea>
   </p>
@@ -92,11 +92,11 @@ function CheckBox(props){
     <input
       className="good-height"
       type="checkbox"
-      id={props.key}
-      name={props.key}
-      value={props.key}
+      id={props.keyword}
+      name={props.keyword}
+      value={props.keyword}
     />
-    <label for={props.key}>&nbsp; {props.label}</label>
+    <label htmlFor={props.keyword}>&nbsp; {props.label}</label>
   </p>
   )
 }
@@ -117,11 +117,11 @@ export default function ContactForm(props) {
         </legend>
 
 
-        {/* <DataList key="reason" label="what can I do for you?" placeholder="select or type"/> */}
+        {/* <DataList keyword="reason" label="what can I do for you?" placeholder="select or type"/> */}
 
 
         <p>
-          <label for="reason">what can I do for you?</label>
+          <label htmlFor="reason">what can I do for you?</label>
           <br />
           <input
             className="wide-input good-height"
@@ -138,13 +138,13 @@ export default function ContactForm(props) {
           </datalist>
         </p>
 
-        <TextInput key="name" label="name" placeholder="your name"/>
+        <TextInput keyword="name" label="name" placeholder="your name"/>
 
-        <EmailInput key="email" label="email" placeholder="name@email.com"/>
+        <EmailInput keyword="email" label="email" placeholder="name@email.com"/>
 
-        <TextBox key="message" label="your message" placeholder={props.placeholder}/>
+        <TextBox keyword="message" label="your message" placeholder={props.placeholder}/>
 
-        <CheckBox key="human" label="I am a human, vegetable, or mineral"/>
+        <CheckBox keyword="human" label="I am a human, vegetable, or mineral"/>
 
 
         <p className="button-area right-slide">

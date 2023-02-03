@@ -1,11 +1,11 @@
 import * as React from "react";
-import ProjectCard from "../barbara-components/ProjectCard";
+// import ProjectCard from "../barbara-components/ProjectCard";
 import * as thumbs from "../barbara-assets/thumbs/thumbs";
 
 // {
 //     address: "",
 //     code: "",
-//     keyword: "",
+//     key: "",
 //     title: "",
 //     languages: "",
 //     description: "",
@@ -13,59 +13,139 @@ import * as thumbs from "../barbara-assets/thumbs/thumbs";
 
 //   },
 
-const projects = [
+const allProjects = [
   {
     address: "",
     code: "https://github.com/Star-Squid/employee-directory",
-    keyword: "employee",
+    key: "employee",
     title: "Employee Directory",
     languages: ["javascript", "html", "css"],
     description:
-      "Built in record ime, this React project was made to a friend's specifications in order to address a problem in his workplace. The program converts .csv employee data into nicely-formatted cards and offers a variety of filters for the results.",
+      "Built in record time, this React project was made to a friend's specifications in order to address a problem in his workplace. The program converts CSV employee data into formatted cards and offers a variety of filters for the results.",
     thumbnail: "../barbara-assets/thumbs/employee.webp",
   },
   {
-    address: "",
-    code: "https://github.com/Star-Squid/employee-directory",
-    keyword: "employee",
-    title: "Employee Directory",
+    address: "https://star-squid.art",
+    code: "https://github.com/Star-Squid/art-portfolio",
+    key: "art",
+    title: "Star Squid Studio",
     languages: ["javascript", "html", "css"],
     description:
-      "Built in record ime, this React project was made to a friend's specifications in order to address a problem in his workplace. The program converts .csv employee data into nicely-formatted cards and offers a variety of filters for the results.",
-    thumbnail: thumbs.employee,
+      "Art portfolio with modal image galleries and collapsible sections.",
+    thumbnail: thumbs.art,
+  },
+  {
+    address: "https://mb-malta.co.uk/DiceStats/",
+    code: "https://github.com/Landsil/landsil.github.io/tree/master/DiceStats",
+    key: "dice",
+    title: "Dice Stats",
+    languages: ["javascript", "html", "css", "mocha testing"],
+    description:
+      "Started as a UI for someone else's dice probability-checker, but turned into full-blown code refactoring, modularisation and testing. Work in progress.",
+    thumbnail: thumbs.dice,
+  },
+  {
+    address: "https://star-squid.github.io/memory",
+    code: "https://github.com/Star-Squid/memory",
+    key: "memory",
+    title: "Wildflower Memory",
+    languages: ["javascript", "html", "css"],
+    description:
+      "Classic memory game with illustrations of British meadow flowers.",
+    thumbnail: thumbs.memory,
+  },
+  {
+    address: "https://star-squid.github.io/hookd",
+    code: "https://github.com/Star-Squid/hookd",
+    key: "hookd",
+    title: "Hookd",
+    languages: ["javascript", "html", "css"],
+    description:
+      "While playing with Bootstrap, I may have invented the next hit app.",
+    thumbnail: thumbs.hookd,
+  },
+  {
+    address: "https://star-squid.github.io/high-five",
+    code: "https://github.com/Star-Squid/high-five",
+    key: "high_five",
+    title: "High Five",
+    languages: ["javascript", "html", "css"],
+    description: "A game of treats and tricks with my cat.",
+    thumbnail: thumbs.high_five,
   },
 ];
 
-function Languages(props){
-  return(
-      <p className="languages">{props.arr[0]} &middot; html &middot; css</p>
-  )
+// original card for referennce only
+// function ProjectCard(props){
+//   return(
+//       <div className="card reveal" role="presentation">
+//           <a href={props.address}>
+//             <div className="contain-thumb">
+//               {/* below div originally has class thumb also */}
+//               <div className={props.keyword}></div>
+//             </div>
+//           </a>
+//           <h3>{props.title}</h3>
+//           <ProjectLanguages languages={props.languages}></ProjectLanguages>
+//           <p>
+//             {props.description}
+//           </p>
+//           <p>
+//             <a href={props.address}>link</a> &middot;
+//             <a href={props.code}>code</a>
+//           </p>
+//         </div>
+//   )
+// }
+
+//make it a loop
+function Languages(props) {
+  let lastLanguage = props.languageArr.pop();
+  // return <p className="languages">{props.languageArr[0]} &middot; {props.languageArr[1]} &middot; {props.languageArr[2]}</p>;
+  return (
+    <p className="languages">
+      {/* {props.languageArr.map((language) => {
+        if (language === lastLanguage) {
+          return language;
+        } else {
+          return language + " · ";
+        }
+      })}I love {lastLanguage} */}
+      {props.languageArr.map((language) => {
+          return language + " · ";
+        })}
+         {lastLanguage}
+    </p>
+  );
 }
 
-const projectList = projects.map(project => {
-  return(    <div className="card reveal" role="presentation">
-  <a href={project.address}>
-    <div className="contain-thumb" role="presentation">
-      <div className="thumb art">
-        <img alt="" src={project.thumbnail}/>
-      </div>
+const projectList = allProjects.map((project) => {
+  return (
+    <div className="card reveal" role="presentation">
+      <a href={project.address}>
+        <div className="contain-thumb" role="presentation">
+          <div className="thumb art">
+            <img alt="" src={project.thumbnail} />
+          </div>
+        </div>
+      </a>
+      <h3>{project.title}</h3>
+      <Languages languageArr={project.languages} />
+      <p>{project.description}</p>
+      <p>
+        <a href={project.address}>link </a>&middot;
+        <a href={project.code}> code</a>
+      </p>
     </div>
-  </a>
-  <h3>{project.title}</h3>
-  <Languages arr={project.languages}/>
-  <p>{project.description}</p>
-  <p>
-    <a href={project.address}>link</a> &middot;
-    <a href={project.code}>code</a>
-  </p>
-</div>)
-})
+  );
+});
 
 export default function CardGrid() {
   return (
     <div className="cards" role="presentation">
+      {projectList}
 
-    {projectList}
+      {/* [end projectlist]
 
       <div className="card reveal" role="presentation">
         <a href="https://github.com/Star-Squid/employee-directory">
@@ -128,7 +208,7 @@ export default function CardGrid() {
         address="https://star-squid.github.io/memory"
         code="https://github.com/Star-Squid/memory"
         languages={["javascript", "html", "css"]}
-        keyword="memory"
+        key="memory"
         description="Classic memory game with illustrations of British meadow flowers"
       ></ProjectCard>
 
@@ -192,7 +272,7 @@ export default function CardGrid() {
           <a href="https://star-squid.github.io/hookd">link</a> &middot;
           <a href="https://github.com/Star-Squid/hookd">code</a>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

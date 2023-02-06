@@ -10,7 +10,7 @@ import SkipLink from "../barbara-components/SkipLink"
 import Portrait from "../barbara-assets/faces-with-eyes.webp"
 import ContactForm from "../barbara-components/ContactForm"
 import Footer from "../barbara-components/Footer"
-import CardGrid from "../barbara-components/CardGrid"
+import {SmallCardGrid} from "../barbara-components/CardGrid"
 
 
 export default function BarbaraPage() {
@@ -149,7 +149,7 @@ export default function BarbaraPage() {
           share.
         </p>
 
-<CardGrid/>
+<SmallCardGrid/>
         
       </Section>
 

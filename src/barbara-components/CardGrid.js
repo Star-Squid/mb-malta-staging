@@ -1,12 +1,13 @@
 import * as React from "react";
 import * as thumbs from "../barbara-assets/thumbs/thumbs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import * as blogThumbs from "../barbara-assets/thumbs/blog"
 import * as clockThumbs from "../barbara-assets/thumbs/clock"
 import * as flashcardsThumbs from "../barbara-assets/thumbs/flashcards"
 
 
-const bigProjects = [{
+const largeProjects = [{
     address: "https://magnificent-griffin-60d663.netlify.app/",
     code: "https://github.com/Star-Squid/squidblog",
     key: "blog",
@@ -117,7 +118,7 @@ const smallProjectList = smallProjects.map((project) => {
   return (
     <div className="card reveal" role="presentation">
 
-      <a href={address ? project.address : project.code}>
+      <a href={project.address ? project.address : project.code}>
         <div className="contain-thumb" role="presentation">
           <div className="thumb art">
             <img alt="" src={project.thumbnail} />
@@ -128,15 +129,15 @@ const smallProjectList = smallProjects.map((project) => {
       <Languages languageArr={project.languages} />
       <p>{project.description}</p>
       <p>
-        {address && <a href={project.address}>link</a>}
-        {address && " · "}
+        {project.address && <a href={project.address}>link</a>}
+        {project.address && " · "}
         <a href={project.code}>code</a>
       </p>
     </div>
   );
 });
 
-const LargeProjectList = largeProjects.map((project) => {
+const largeProjectList = largeProjects.map((project) => {
   return (
     <div className="card reveal" role="presentation">
       <a href={project.address}>
@@ -152,7 +153,7 @@ const LargeProjectList = largeProjects.map((project) => {
       <p>{project.description}</p>
       <p>
       <a href={"/" + project.key + "-project.html"} className="readmore">READ MORE <FontAwesomeIcon icon={solid("angles-right")} /></a>
-      <FontAwesomeIcon icon={solid("angles-right")} />
+
       </p>
     </div>
   );

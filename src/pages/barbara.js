@@ -1,16 +1,14 @@
 import * as React from "react"
-import "../styles/barbara-main.scss"
-// import ProjectCard from "../barbara-components/ProjectCard"
 import Navbar from "../barbara-components/Navbar"
 import Sidebar from "../barbara-components/Sidebar"
 import Section from "../barbara-layout/Section"
-import Modal from "../barbara-layout/Modal"
+// import Modal from "../barbara-layout/Modal"
 import Paragraph from "../barbara-layout/Paragraph"
 import SkipLink from "../barbara-components/SkipLink"
 import Portrait from "../barbara-assets/faces-with-eyes.webp"
 import ContactForm from "../barbara-components/ContactForm"
 import Footer from "../barbara-components/Footer"
-import {SmallCardGrid} from "../barbara-components/CardGrid"
+import {SmallCardGrid, LargeCardGrid} from "../barbara-components/CardGrid"
 
 
 export default function BarbaraPage() {
@@ -83,63 +81,8 @@ export default function BarbaraPage() {
         <p className="reveal small-description">
           Some special projects deserved a whole page to themselves.
         </p>
-        <div className="cards" role="presentation">
-          <div className="card reveal" role="presentation">
-            <a href="projects/blog.html">
-              <div className="contain-thumb" role="presentation">
-                <div className="thumb blog-1"></div>
-              </div>
-            </a>
-            <h3>Star Squid Blog</h3>
-            <p className="languages">
-              react &middot; scss &middot; graphQL &middot; contentful api
-            </p>
-            <p>
-              Going back to basics with a personal blog and into the future with
-              modern web solutions.
-            </p>
-            <p>
-              <a href="projects/blog.html" className="readmore">READ MORE</a>
-              <i className="fa-solid fa-angles-right"></i>
-            </p>
-          </div>
 
-          <div className="card reveal" role="presentation">
-            <a href="projects/flashcards.html">
-              <div className="contain-thumb" role="presentation">
-                <div className="thumb flashcards-1"></div>
-              </div>
-            </a>
-            <h3>Flipping Flashcards</h3>
-            <p className="languages">javascript &middot; html &middot; css</p>
-            <p>
-              The study aid the world may not need. It serves flashcards from
-              different fields of study and remembers how well you remember.
-            </p>
-            <p>
-              <a href="projects/flashcards.html" className="readmore">READ MORE</a>
-              <i className="fa-solid fa-angles-right"></i>
-            </p>
-          </div>
-
-          <div className="card reveal" role="presentation">
-            <a href="projects/clock.html">
-              <div className="contain-thumb" role="presentation">
-                <div className="thumb clock-1"></div>
-              </div>
-            </a>
-            <h3>Workday Clock</h3>
-            <p className="languages">javascript &middot; html &middot; css</p>
-            <p>
-              All the benefits of an analog clock without the awkwardness of
-              roundness.
-            </p>
-            <p>
-              <a href="projects/clock.html" className="readmore">READ MORE</a>
-              <i className="fa-solid fa-angles-right"></i>
-            </p>
-          </div>
-        </div>
+        <LargeCardGrid/>
 
         <hr />
 

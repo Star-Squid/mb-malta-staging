@@ -103,12 +103,16 @@ const smallProjects = [
 ];
 
 function Languages(props) {
-  let lastLanguage = props.languageArr.pop();
+  let lastLanguage = props.languageArr[props.languageArr.length - 1];
+  let languageList = "";
+  
+for (let i = 0; i<props.languageArr.length-1; i++){
+  languageList = languageList + props.languageArr[i] + " · "
+}
+
   return (
     <p className="languages">
-      {props.languageArr.map((language) => {
-        return language + " · ";
-      })}
+      {languageList}
       {lastLanguage}
     </p>
   );

@@ -6,11 +6,11 @@ export default function () {
       <ul>
         <li>
           <a href="#header">
-            <h2 className="logo">BM</h2>
+            <h2 className="logo"> BM </h2>
           </a>
         </li>
         <li>
-          <a href="#about"> about </a>
+          <a href="#main"> about </a>
         </li>
         <li>
           <a href="#projects"> projects </a>

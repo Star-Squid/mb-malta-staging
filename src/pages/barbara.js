@@ -9,6 +9,7 @@ import Portrait from "../barbara-assets/faces-with-eyes.webp"
 import ContactForm from "../barbara-components/ContactForm"
 import Footer from "../barbara-components/Footer"
 import {SmallCardGrid, LargeCardGrid} from "../barbara-components/CardGrid"
+import Heading from "../barbara-layout/Heading"
 
 
 export default function BarbaraPage() {
@@ -77,6 +78,7 @@ export default function BarbaraPage() {
 
       <Section id="projects">
         <hr />
+        <Heading>Favourite projects</Heading>
         <h2 className="reveal">Favourite projects</h2>
         <p className="reveal small-description">
           Some special projects deserved a whole page to themselves.

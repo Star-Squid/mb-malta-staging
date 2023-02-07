@@ -22,7 +22,7 @@
   }
   
   h1 {
-    font-family: $base-font;
+    font-family: $fancy-font;
     color: $white;
     font-size: calc($base-fontsize + 8vmin);
     margin: 0px;
@@ -108,16 +108,17 @@
     text-align: center;
   }
   
-  .skip-link a {
-    position: fixed;
-    left: 0;
-    right: 0;
+  .skip-link {
+    position: absolute;
+    z-index: 3;
+    padding: 1rem;
+    right: 50%;
     top: 0;
     translate: 0 -100%;
     transition: translate 150ms ease-in-out;
   }
   
-  .skip-link a:focus {
+  .skip-link:focus-within {
     translate: 0;
   }
   

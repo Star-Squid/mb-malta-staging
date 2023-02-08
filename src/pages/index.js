@@ -29,7 +29,7 @@ const IndexPage = () => {
             fill="rgb(81, 87, 47)"
             stroke="none"
           >
-            <a href="https://landsil.github.io/mateusz/">
+            <a href="./mateusz">
               <path
                 id="mat"
                 d="M39650 59458 c-19 -5 -112 -13 -206 -17 -94 -5 -180 -14 -192 -20
@@ -569,7 +569,7 @@ const IndexPage = () => {
               <title>Jack the Cat's Instagram</title>
             </a>
 
-            <a href="https://landsil.github.io/barbara/">
+            <a href="./barbara">
               <path
                 id="barbara"
                 d="M21505 43995 c-38 -8 -108 -22 -155 -31 -95 -18 -208 -52 -216 -65

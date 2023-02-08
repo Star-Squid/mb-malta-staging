@@ -2,43 +2,66 @@ import * as React from "react";
 import * as thumbs from "../barbara-assets/thumbs/thumbs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import * as blogThumbs from "../barbara-assets/thumbs/blog"
-import * as clockThumbs from "../barbara-assets/thumbs/clock"
-import * as flashcardsThumbs from "../barbara-assets/thumbs/flashcards"
+import * as blogThumbs from "../barbara-assets/thumbs/blog";
+import * as clockThumbs from "../barbara-assets/thumbs/clock";
+import * as flashcardsThumbs from "../barbara-assets/thumbs/flashcards";
 
-
-const largeProjects = [{
+const largeProjects = [
+  {
     address: "https://magnificent-griffin-60d663.netlify.app/",
     code: "https://github.com/Star-Squid/squidblog",
     key: "blog",
     title: "Star Squid Blog",
     languages: ["react", "scss", "graphQL", "contentful api"],
-    description: "Going back to basics with a personal blog and into the future with modern web solutions.",
+    description:
+      "Going back to basics with a personal blog and into the future with modern web solutions.",
     thumbnail: blogThumbs.blog1,
     //! can we just iterate over exports?
-    images: [blogThumbs.blog1, blogThumbs.blog2, blogThumbs.blog3, blogThumbs.blog4, blogThumbs.blog5]
-},
-{
-  address: "https://star-squid.github.io/Flipping-Flashcards",
-code: "https://github.com/Star-Squid/Flipping-Flashcards",
-key: "flashcards",
-title: "Flipping Flashcards",
-languages: ["javascript", "css", "html"],
-description: "The study aid the world may not need. It serves flashcards from different fields of study and remembers how well you remember.",
-thumbnail: flashcardsThumbs.flashcards1,
-images: [flashcardsThumbs.flashcards1, flashcardsThumbs.flashcards2, flashcardsThumbs.flashcards3, flashcardsThumbs.flashcards4, flashcardsThumbs.flashcards5, flashcardsThumbs.flashcards6, flashcardsThumbs.flashcards7]
-},
-{
-  address: "hhttps://star-squid.github.io/Workday-Clock/",
-  code: "https://github.com/Star-Squid/Workday-Clock",
-key: "clock",
-title: "Workday Clock",
-languages: ["javascript", "css", "html"],
-description: "All the benefits of an analog clock without the problem of roundness.",
-thumbnail: clockThumbs.clock1,
-images: [clockThumbs.clock1, clockThumbs.clock2, clockThumbs.clock3, clockThumbs.clock4, clockThumbs.clock5]
-}
-]
+    images: [
+      blogThumbs.blog1,
+      blogThumbs.blog2,
+      blogThumbs.blog3,
+      blogThumbs.blog4,
+      blogThumbs.blog5,
+    ],
+  },
+  {
+    address: "https://star-squid.github.io/Flipping-Flashcards",
+    code: "https://github.com/Star-Squid/Flipping-Flashcards",
+    key: "flashcards",
+    title: "Flipping Flashcards",
+    languages: ["javascript", "css", "html"],
+    description:
+      "The study aid the world may not need. It serves flashcards from different fields of study and remembers how well you remember.",
+    thumbnail: flashcardsThumbs.flashcards1,
+    images: [
+      flashcardsThumbs.flashcards1,
+      flashcardsThumbs.flashcards2,
+      flashcardsThumbs.flashcards3,
+      flashcardsThumbs.flashcards4,
+      flashcardsThumbs.flashcards5,
+      flashcardsThumbs.flashcards6,
+      flashcardsThumbs.flashcards7,
+    ],
+  },
+  {
+    address: "hhttps://star-squid.github.io/Workday-Clock/",
+    code: "https://github.com/Star-Squid/Workday-Clock",
+    key: "clock",
+    title: "Workday Clock",
+    languages: ["javascript", "css", "html"],
+    description:
+      "All the benefits of an analog clock without the problem of roundness.",
+    thumbnail: clockThumbs.clock1,
+    images: [
+      clockThumbs.clock1,
+      clockThumbs.clock2,
+      clockThumbs.clock3,
+      clockThumbs.clock4,
+      clockThumbs.clock5,
+    ],
+  },
+];
 
 const smallProjects = [
   {
@@ -105,10 +128,10 @@ const smallProjects = [
 function Languages(props) {
   let lastLanguage = props.languageArr[props.languageArr.length - 1];
   let languageList = "";
-  
-for (let i = 0; i<props.languageArr.length-1; i++){
-  languageList = languageList + props.languageArr[i] + " · "
-}
+
+  for (let i = 0; i < props.languageArr.length - 1; i++) {
+    languageList = languageList + props.languageArr[i] + " · ";
+  }
 
   return (
     <p className="languages">
@@ -121,7 +144,6 @@ for (let i = 0; i<props.languageArr.length-1; i++){
 const smallProjectList = smallProjects.map((project) => {
   return (
     <div className="card reveal" role="presentation">
-
       <a href={project.address ? project.address : project.code}>
         <div className="contain-thumb" role="presentation">
           <div className="thumb art">
@@ -156,8 +178,9 @@ const largeProjectList = largeProjects.map((project) => {
       <Languages languageArr={project.languages} />
       <p>{project.description}</p>
       <p>
-      <a href={"/" + project.key + "-project.html"} className="readmore">READ MORE <FontAwesomeIcon icon={solid("angles-right")} /></a>
-
+        <a href={"/" + project.key + "-project.html"} className="readmore">
+          READ MORE <FontAwesomeIcon icon={solid("angles-right")} />
+        </a>
       </p>
     </div>
   );

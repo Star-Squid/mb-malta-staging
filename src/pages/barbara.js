@@ -10,6 +10,7 @@ import ContactForm from "../barbara-components/ContactForm";
 import Footer from "../barbara-components/Footer";
 import { SmallCardGrid, LargeCardGrid } from "../barbara-components/CardGrid";
 import Heading from "../barbara-layout/Heading";
+import "../styles/barbara-main.scss"
 
 export default function BarbaraPage() {
   return (
@@ -81,7 +82,10 @@ export default function BarbaraPage() {
         <LargeCardGrid />
 
         {/* <hr /> */}
-        <br/>
+        {/* <br/> */}
+        </Section>
+
+<Section id="smallprojects">
 
         <Heading>Small projects</Heading>
         <p className="reveal small-description">

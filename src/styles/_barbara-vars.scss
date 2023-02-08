@@ -8,7 +8,7 @@
 
     $background-img: url("../barbara-assets/keyboard.webp");
   
-    $transparent: rgba(1, 1, 1, 0);
+    $transparent: #01010100;
     $white: #ffffff;
     $almostwhite: #cccccc;
     $accent: #27c3f1;
@@ -27,3 +27,8 @@
   
     $link: $accent;
     $link-hover: $almostwhite;
+
+    $boxshadow: 0 0 0.5rem #00000059;
+
+    // $triallink: #cccccc;
+    // $triallink-hover: #27c3f1;

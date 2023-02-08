@@ -153,7 +153,7 @@ export default function ContactForm(props) {
         <Button type="submit" primary="yes" text="Send!" name="Submit"/>
 
 
-          <button type="reset" className="pushable">
+          {/* <button type="reset" className="pushable">
             <span role="presentation" className="shadow"></span>
             <span role="presentation" className="edge"></span>
             <span className="frontbtn" role="button">
@@ -169,7 +169,8 @@ export default function ContactForm(props) {
               {" "}
               Send!{" "}
             </span>
-          </button>
+          </button> */}
+          
         </p>
       </fieldset>
     </form>
